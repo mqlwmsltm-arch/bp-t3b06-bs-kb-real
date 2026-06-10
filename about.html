@@ -1,147 +1,373 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>예약센터 소개 &amp; 100% 리얼 UGC 후기 | 발산 노래방 내돈내산</title>
-  <meta name="description" content="발산 노래방 안심 예약센터가 만들어진 솔직한 배경 스토리와, 삐끼 바가지 마찰 없이 발산을 제대로 조진 브로들의 내돈내산 리얼 체험기!">
-  <meta name="keywords" content="발산 노래방 내돈내산, 발산 노래방 후기, 마곡 노래방 추천">
-  <meta name="bpaas-design-system" content="premium-minimal">
-  <meta name="bpaas-design-theme" content="sunset-amber">
-  <link rel="canonical" href="https://t3b06-bs-kb-real.pages.dev/about.html">
-  <style>
-    :root {
-      --bg-color: #0f0a05;
-      --bg-card: #1f140a;
-      --accent: #f97316;
-      --text: #ffedd5;
-      --text-muted: #fdba74;
-      --border: rgba(255, 255, 255, 0.05);
-      --font-stack: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text);
-      font-family: var(--font-stack);
-      line-height: 1.8;
-      padding: 0 24px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 30px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .brand {
-      font-size: 1.6rem;
-      font-weight: 900;
-      color: #fff;
-      text-decoration: none;
-    }
-    nav { display: flex; gap: 28px; }
-    nav a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    nav a:hover { color: #fff; }
-    main { padding-bottom: 60px; }
-    h2 { font-size: 2.2rem; font-weight: 900; color: #fff; margin-bottom: 28px; }
-    .about-desc { font-size: 1.1rem; color: var(--text); margin-bottom: 40px; }
-    .about-desc p { margin-bottom: 20px; }
-    .reviews-section { margin-top: 60px; }
-    .review-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      padding: 30px;
-      border-radius: 14px;
-      margin-bottom: 24px;
-    }
-    .review-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 14px;
-      font-size: 0.9rem;
-      font-weight: 800;
-    }
-    .reviewer-stars { color: #fbbf24; }
-    .review-content { font-size: 1rem; color: var(--text-muted); }
-    footer {
-      border-top: 1px solid var(--border);
-      padding-top: 50px;
-      margin-top: 100px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-    footer a { color: var(--text-muted); text-decoration: none; margin: 0 14px; font-weight: 700; }
-    footer a:hover { color: var(--accent); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>발산 노래방 내돈내산 - 정보</title>
+    <meta name="description" content="발산 노래방 내돈내산 솔직 후기. 가격 시설 위치 완벽 정리. 진짜 가봐야 아는 맛집(?) 노래방. 010-6279-0862">
+    <meta name="keywords" content="발산 노래방, 내돈내산, 발산 노래방 추천, 발산 가성비 노래방, 발산 노래방 가격, 발산 코인노래방">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <link rel="canonical" href="https://t3b06-bs-kb-real.vercel.app">
+    <meta property="og:title" content="발산 노래방 내돈내산 - 정보">
+    <meta property="og:description" content="발산 노래방 내돈내산 솔직 후기. 가격 시설 위치 완벽 정리. 진짜 가봐야 아는 맛집(?) 노래방.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="발산 노래방 내돈내산 - 정보">
+    <meta name="twitter:description" content="발산 노래방 내돈내산 솔직 후기. 가격 시설 위치 완벽 정리.">
+    <style>
+        /* CSS 핵심: brutlatist-avantgarde + kr-raw-concrete 테마 */
+        :root {
+            --bg: #f5f0eb;
+            --text: #1a1a1a;
+            --accent: #d32f2f;
+            --accent2: #212121;
+            --border: 4px solid #1a1a1a;
+            --shadow: 8px 8px 0 rgba(0,0,0,0.1);
+            --font: 'Courier New', Courier, monospace;
+            --font-header: 'Impact', 'Haettenschweiler', 'Arial Black', sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font);
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* hamburger-menu 패턴 */
+        .menu-toggle {
+            display: none;
+            background: var(--accent2);
+            color: #fff;
+            border: var(--border);
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-family: var(--font-header);
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            z-index: 1000;
+        }
+        .menu-toggle::before {
+            content: '☰';
+        }
+        .nav-open .menu-toggle::before {
+            content: '✕';
+        }
+        .nav-open .nav-list {
+            display: flex !important;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                background: var(--bg);
+                border: var(--border);
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 4rem 2rem;
+                gap: 1.5rem;
+                z-index: 999;
+            }
+            .nav-list a {
+                font-size: 2rem;
+                text-align: center;
+                border-bottom: 2px solid var(--text);
+                padding-bottom: 0.5rem;
+            }
+        }
+        /* 공통 레이아웃 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        header {
+            border-bottom: var(--border);
+            padding: 1rem 0;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-family: var(--font-header);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: -0.05em;
+            color: var(--accent);
+            text-shadow: 3px 3px 0 var(--accent2);
+        }
+        .nav-list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-list a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .nav-list a:hover {
+            border-bottom-color: var(--accent);
+        }
+        .nav-list a.active {
+            border-bottom-color: var(--accent);
+            color: var(--accent);
+        }
+        /* 히어로 */
+        .hero {
+            padding: 3rem 0;
+            border-bottom: var(--border);
+            background: repeating-linear-gradient(45deg, #e0dcd6, #e0dcd6 10px, #f5f0eb 10px, #f5f0eb 20px);
+        }
+        .hero h1 {
+            font-family: var(--font-header);
+            font-size: 4rem;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .hero h1 span {
+            display: block;
+            color: var(--accent);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            font-weight: bold;
+        }
+        .hero .tagline {
+            margin-top: 1rem;
+            display: inline-block;
+            background: var(--accent2);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            font-family: var(--font-header);
+            text-transform: uppercase;
+        }
+        /* 섹션 */
+        section {
+            padding: 2rem 0;
+            border-bottom: var(--border);
+        }
+        .section-title {
+            font-family: var(--font-header);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 0.5rem;
+            background: var(--accent);
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: #fff;
+            border: var(--border);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: 0.2s;
+        }
+        .card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 rgba(0,0,0,0.15);
+        }
+        .card h3 {
+            font-family: var(--font-header);
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        .card .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        .card .meta {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0.5rem 0;
+        }
+        .card .highlight {
+            background: #ffd700;
+            padding: 0.2rem 0.5rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent2);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            font-family: var(--font-header);
+            text-transform: uppercase;
+            border: var(--border);
+            transition: 0.2s;
+        }
+        .btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+        /* FAQ */
+        .faq-list {
+            list-style: none;
+        }
+        .faq-item {
+            border: var(--border);
+            margin-bottom: 1rem;
+            background: #fff;
+        }
+        .faq-question {
+            padding: 1rem 1.5rem;
+            font-family: var(--font-header);
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: relative;
+            border-bottom: 2px solid var(--text);
+            background: #eae5de;
+        }
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: 1.5rem;
+        }
+        .faq-question.open::after {
+            content: '-';
+        }
+        .faq-answer {
+            padding: 1rem 1.5rem;
+            display: none;
+        }
+        .faq-question.open + .faq-answer {
+            display: block;
+        }
+        /* 푸터 */
+        footer {
+            padding: 2rem 0;
+            background: var(--accent2);
+            color: #fff;
+            text-align: center;
+            margin-top: auto;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+        .footer-contact {
+            font-size: 1.5rem;
+            font-family: var(--font-header);
+            margin-top: 0.5rem;
+        }
+        /* 지역 시그널 배지 */
+        .local-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            font-family: var(--font-header);
+            text-transform: uppercase;
+            margin-right: 0.5rem;
+        }
+        /* 반응형 768 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .logo {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
+    <!-- 햄버거 메뉴 토글 -->
+    <button class="menu-toggle" onclick="document.body.classList.toggle('nav-open')"></button>
+
+    <!-- 헤더 -->
     <header>
-      <a href="index.html" class="brand">🔥 발산 안심 가이드</a>
-      <nav>
-        <a href="index.html">홈</a>
-        <a href="about.html">소개</a>
-        <a href="blog.html">블로그</a>
-      </nav>
+        <div class="container header-inner">
+            <div class="logo">발산노래방</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info" class="active">정보</a></li>
+                    <li><a href="/review">리뷰</a></li>
+                    <li><a href="/map">지도</a></li>
+                    <li><a href="/contact">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <h2>발산 클린 유흥 수호 스토리</h2>
-      <div class="about-desc">
-        <p>반갑다 브로! 발산역과 마곡지구 테크노 밸리 일대에서 불철주야 피땀 흘려 일하고 회포를 풀기 위해 밤거리를 서성이는 착한 동생들을 지키는 대장 형이다. 형 역시 발산역 근처에서 친구들이랑 술 마시고 3차로 노래방 갔다가, 호객 삐끼들이 마구잡이로 찌르는 가격 낚시와 가짜 정액제 마찰에 지갑 버퍼를 부당하게 뺏기고 술이 확 깨버린 아픈 사연이 있다 브로. 투명한 가격 수호와 품격 높은 음향 룸 보장만이 발산의 건전한 유흥 문화를 지키는 유일한 해법이라 확신하고 이 예약센터를 출범시켰다.</p>
-        <p>우리는 강서구 발산동에서 가장 우수하고 깨끗한 노래방 매장 대표들과 합의하여 100% 정찰 가격제를 가동하고 있다 브로. 우리 핫라인을 통해 들어가는 모든 방은 소파 방역 소독 케어와 마이크 살균 필터링이 확실하며 에어컨 공조 환기 가동 상태가 최상급으로 세팅되어 있다. 복잡한 신경전 마찰 일절 접어두고 오늘 밤은 형이 완성해 둔 클린 다이얼로 진짜 기분 좋은 도파민 가창력을 뽐내봐라 브로!</p>
-      </div>
 
-      <div class="reviews-section">
-        <h2>단골 브로들의 100% 생생 UGC 후기</h2>
-        
-        <div class="review-card">
-          <div class="review-header">
-            <span class="reviewer-stars">★★★★★</span>
-            <span class="reviewer-name">발산가창력왕 브로</span>
-            <span class="review-date">2026.05.22</span>
-          </div>
-          <p class="review-content">발산역 주변 노래방 중에 진짜 음질 원탑임 브로. 기기 튜닝을 너무 잘해놔서 에코 오버헤드 1도 없고 목소리가 뻥 뚫리듯이 잘 나옴! 게다가 사전에 통화로 예약한 가격만 딱 내고 나와서 삐끼들이랑 피곤한 말씨름 마찰 벌일 필요 전혀 없어서 최고였네요.</p>
+    <!-- 히어로 -->
+    <section class="hero">
+        <div class="container">
+            <h1>
+                <span>발산 노래방</span>
+                내돈내산 정보
+            </h1>
+            <p>야, 진짜 가봐야 아는 맛집(?) 노래방. 가격 시설 위치 까발린다. 내돈내산은 거짓말 안 한다.</p>
+            <div class="tagline">#진짜정보 #노빠꾸</div>
         </div>
+    </section>
 
-        <div class="review-card">
-          <div class="review-header">
-            <span class="reviewer-stars">★★★★★</span>
-            <span class="reviewer-name">마곡단골 브로</span>
-            <span class="review-date">2026.05.15</span>
-          </div>
-          <p class="review-content">룸 청결함이 장난 아님다 브로. 꿉꿉한 담배 찌든 내 마찰 전혀 없고 소파나 테이블도 엄청 뽀송해서 쾌적함의 정수를 맛보고 왔습니다. 다음 주 회사 회식 뒷풀이 예약도 무조건 형 핫라인 다이얼로 고정함다!</p>
-        </div>
-
-        <div class="review-card">
-          <div class="review-header">
-            <span class="reviewer-stars">★★★★★</span>
-            <span class="reviewer-name">가성비수호자 브로</span>
-            <span class="review-date">2026.05.03</span>
-          </div>
-          <p class="review-content">광고 찌라시에 지쳐 대뇌 피질 아팠는데, 010-6279-0862 핫라인 통신 하나로 해결함 브로. 단골 혜택 섭스까지 깔끔하게 적용받아 도파민 가창 힐링 충전하고 갑니다!</p>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>&copy; 2026 발산 노래방 안심 가이드. All Rights Reserved.</p>
-      <p style="margin-top:16px;">
-        <a href="index.html">홈</a> | 
-        <a href="about.html">소개</a> | 
-        <a href="blog.html">블로그</a>
-      </p>
-    </footer>
-  </div>
+    <!-- 상세 정보 섹션 -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">📍 발산 노래방 찐정보</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>💰 가격</h3>
+                    <div class="price">2시간 20,000원</div>
+                    <p class="meta">평일 기준 / 주말 +5,000원</p>
+                    <p>1시간 12,000원 / 코인 500원 1곡</p>
+                    <span class="highlight">가성비 미쳤다</span>
+                </div>
+                <div class="card">
+                    <h3>🎤 시설</h3>
+                    <p>마이크: 슈어 SM58 (짭 아니고 찐)</p>
+                    <p>스피커: JBL 프리미엄</p>
+                    <p>방음: ㅆㅅㅌㅊ (이층에서 놀아도 안 들림)</p>
+                    <span class="highlight">음질 개꿀</span>
+                </div>
 </body>
 </html>
