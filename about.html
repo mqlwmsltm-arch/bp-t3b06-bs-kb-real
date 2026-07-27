@@ -1,375 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>발산 노래방 내돈내산 - 정보</title>
-    <meta name="description" content="발산 노래방 내돈내산 솔직 후기. 가격 시설 위치 완벽 정리. 진짜 가봐야 아는 맛집(?) 노래방. 010-6279-0862">
-    <meta name="keywords" content="발산 노래방, 내돈내산, 발산 노래방 추천, 발산 가성비 노래방, 발산 노래방 가격, 발산 코인노래방">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <link rel="canonical" href="https://balsan-room-info.node-link.shop/about.html">
-    <meta property="og:title" content="발산 노래방 내돈내산 - 정보">
-    <meta property="og:description" content="발산 노래방 내돈내산 솔직 후기. 가격 시설 위치 완벽 정리. 진짜 가봐야 아는 맛집(?) 노래방.">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="발산 노래방 내돈내산 - 정보">
-    <meta name="twitter:description" content="발산 노래방 내돈내산 솔직 후기. 가격 시설 위치 완벽 정리.">
-    <style>
-        /* CSS 핵심: brutlatist-avantgarde + kr-raw-concrete 테마 */
-        :root {
-            --bg: #f5f0eb;
-            --text: #1a1a1a;
-            --accent: #d32f2f;
-            --accent2: #212121;
-            --border: 4px solid #1a1a1a;
-            --shadow: 8px 8px 0 rgba(0,0,0,0.1);
-            --font: 'Courier New', Courier, monospace;
-            --font-header: 'Impact', 'Haettenschweiler', 'Arial Black', sans-serif;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: var(--font);
-            line-height: 1.5;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        /* hamburger-menu 패턴 */
-        .menu-toggle {
-            display: none;
-            background: var(--accent2);
-            color: #fff;
-            border: var(--border);
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            font-family: var(--font-header);
-            text-transform: uppercase;
-            font-size: 1.2rem;
-            position: fixed;
-            top: 1rem;
-            right: 1rem;
-            z-index: 1000;
-        }
-        .menu-toggle::before {
-            content: '☰';
-        }
-        .nav-open .menu-toggle::before {
-            content: '✕';
-        }
-        .nav-open .nav-list {
-            display: flex !important;
-        }
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-            .nav-list {
-                display: none;
-                flex-direction: column;
-                background: var(--bg);
-                border: var(--border);
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                padding: 4rem 2rem;
-                gap: 1.5rem;
-                z-index: 999;
-            }
-            .nav-list a {
-                font-size: 2rem;
-                text-align: center;
-                border-bottom: 2px solid var(--text);
-                padding-bottom: 0.5rem;
-            }
-        }
-        /* 공통 레이아웃 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        header {
-            border-bottom: var(--border);
-            padding: 1rem 0;
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .logo {
-            font-family: var(--font-header);
-            font-size: 2.5rem;
-            text-transform: uppercase;
-            letter-spacing: -0.05em;
-            color: var(--accent);
-            text-shadow: 3px 3px 0 var(--accent2);
-        }
-        .nav-list {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-list a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            border-bottom: 2px solid transparent;
-            transition: 0.2s;
-        }
-        .nav-list a:hover {
-            border-bottom-color: var(--accent);
-        }
-        .nav-list a.active {
-            border-bottom-color: var(--accent);
-            color: var(--accent);
-        }
-        /* 히어로 */
-        .hero {
-            padding: 3rem 0;
-            border-bottom: var(--border);
-            background: repeating-linear-gradient(45deg, #e0dcd6, #e0dcd6 10px, #f5f0eb 10px, #f5f0eb 20px);
-        }
-        .hero h1 {
-            font-family: var(--font-header);
-            font-size: 4rem;
-            text-transform: uppercase;
-            line-height: 1;
-            margin-bottom: 1rem;
-        }
-        .hero h1 span {
-            display: block;
-            color: var(--accent);
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            font-weight: bold;
-        }
-        .hero .tagline {
-            margin-top: 1rem;
-            display: inline-block;
-            background: var(--accent2);
-            color: #fff;
-            padding: 0.5rem 1rem;
-            font-family: var(--font-header);
-            text-transform: uppercase;
-        }
-        /* 섹션 */
-        section {
-            padding: 2rem 0;
-            border-bottom: var(--border);
-        }
-        .section-title {
-            font-family: var(--font-header);
-            font-size: 2.5rem;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-        .section-title::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 0.5rem;
-            background: var(--accent);
-        }
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-        .card {
-            background: #fff;
-            border: var(--border);
-            padding: 1.5rem;
-            box-shadow: var(--shadow);
-            transition: 0.2s;
-        }
-        .card:hover {
-            transform: translate(-4px, -4px);
-            box-shadow: 12px 12px 0 rgba(0,0,0,0.15);
-        }
-        .card h3 {
-            font-family: var(--font-header);
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-        }
-        .card .price {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--accent);
-        }
-        .card .meta {
-            font-size: 0.9rem;
-            color: #555;
-            margin: 0.5rem 0;
-        }
-        .card .highlight {
-            background: #ffd700;
-            padding: 0.2rem 0.5rem;
-            font-weight: bold;
-            display: inline-block;
-        }
-        .btn {
-            display: inline-block;
-            background: var(--accent2);
-            color: #fff;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            font-family: var(--font-header);
-            text-transform: uppercase;
-            border: var(--border);
-            transition: 0.2s;
-        }
-        .btn:hover {
-            background: var(--accent);
-            color: #fff;
-        }
-        /* FAQ */
-        .faq-list {
-            list-style: none;
-        }
-        .faq-item {
-            border: var(--border);
-            margin-bottom: 1rem;
-            background: #fff;
-        }
-        .faq-question {
-            padding: 1rem 1.5rem;
-            font-family: var(--font-header);
-            font-size: 1.2rem;
-            cursor: pointer;
-            position: relative;
-            border-bottom: 2px solid var(--text);
-            background: #eae5de;
-        }
-        .faq-question::after {
-            content: '+';
-            position: absolute;
-            right: 1rem;
-            top: 1rem;
-            font-size: 1.5rem;
-        }
-        .faq-question.open::after {
-            content: '-';
-        }
-        .faq-answer {
-            padding: 1rem 1.5rem;
-            display: none;
-        }
-        .faq-question.open + .faq-answer {
-            display: block;
-        }
-        /* 푸터 */
-        footer {
-            padding: 2rem 0;
-            background: var(--accent2);
-            color: #fff;
-            text-align: center;
-            margin-top: auto;
-        }
-        footer a {
-            color: #ffd700;
-            text-decoration: underline;
-        }
-        .footer-contact {
-            font-size: 1.5rem;
-            font-family: var(--font-header);
-            margin-top: 0.5rem;
-        }
-        /* 지역 시그널 배지 */
-        .local-badge {
-            display: inline-block;
-            background: var(--accent);
-            color: #fff;
-            padding: 0.2rem 0.8rem;
-            font-family: var(--font-header);
-            text-transform: uppercase;
-            margin-right: 0.5rem;
-        }
-        /* 반응형 768 */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            .section-title {
-                font-size: 2rem;
-            }
-            .logo {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>발산 노래방 내돈내산 — 정보</title>
+  <meta name="description" content="발산 지역 내돈내산 노래방을 찾는 당신을 위해 인원·시간·목적에 따라 맞춤형 선택 기준과 이용 전 확인사항을 상세히 안내합니다.">
+  <meta name="keywords" content="발산 노래방, 내돈내산 노래방, 발산 노래방 이용 팁, 발산 노래방 조건, 발산 노래방 가격">
+  <link rel="canonical" href="https://balsan-room-info.node-link.shop/about.html">
+  <meta property="og:title" content="발산 노래방 내돈내산 — 조건별 선택 가이드">
+  <meta property="og:description" content="발산 노래방을 고를 때 꼭 확인해야 할 조건과 사용 전 체크리스트를 한눈에 정리했습니다.">
   <meta property="og:url" content="https://balsan-room-info.node-link.shop/about.html">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://balsan-room-info.node-link.shop/assets/og-image.jpg">
+  <!-- CSS는 기존 디자인 시스템을 그대로 사용 -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 햄버거 메뉴 토글 -->
-    <button class="menu-toggle" onclick="document.body.classList.toggle('nav-open')"></button>
+  <header class="t-head-t23i">
+    <h1>발산 노래방 내돈내산 – 정보</h1>
+    <p>발산 지역에서 ‘내돈내산’ 기준으로 선택할 수 있는 노래방 정보를 한눈에 정리합니다.</p>
+  </header>
 
-    <!-- 헤더 -->
-    <header>
-        <div class="container header-inner">
-            <div class="logo">발산노래방</div>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/info" class="active">정보</a></li>
-                    <li><a href="/review">리뷰</a></li>
-                    <li><a href="/map">지도</a></li>
-                    <li><a href="/contact">연락처</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <nav class="v-list-5ulb">
+    <ul>
+      <li><a class="r-box-xm7b" href="/home">홈</a></li>
+      <li><a class="r-box-xm7b" href="/guide">가이드</a></li>
+      <li><a class="r-box-xm7b" href="/info">정보</a></li>
+      <li><a class="r-box-xm7b" href="/faq">FAQ</a></li>
+    </ul>
+  </nav>
 
-    <!-- 히어로 -->
-    <section class="hero">
-        <div class="container">
-            <h1>
-                <span>발산 노래방</span>
-                내돈내산 정보
-            </h1>
-            <p>야, 진짜 가봐야 아는 맛집(?) 노래방. 가격 시설 위치 까발린다. 내돈내산은 거짓말 안 한다.</p>
-            <div class="tagline">#진짜정보 #노빠꾸</div>
-        </div>
+  <main>
+    <!-- 선택 전 체크리스트 -->
+    <section class="r-box-xm7b">
+      <h2>① 선택 전 필수 체크리스트</h2>
+      <p>노래방을 예약하기 전, 가장 먼저 고려해야 할 요소는 **인원 규모**입니다. 소규모 그룹(2~4명)이라면 방 하나만으로 충분하지만, 5명 이상이 모이면 방을 2개 이상 연결할 수 있는 시설을 찾아야 합니다. 또한, 방마다 마이크와 스피커의 출력 차이가 존재하니, 인원에 맞는 음향 환경을 미리 확인하는 것이 중요합니다.</p>
+      <p>다음으로 고려해야 할 점은 **시간대**입니다. 평일 저녁에는 대다수 노래방이 비교적 한산하지만, 주말 저녁과 새벽 시간대는 예약이 빠르게 마감됩니다. 특히, 발산역 주변은 대학가와 인접해 있어 늦은 시간대에 고객 유입이 급증하므로, 원하는 시간에 확정하려면 최소 2일 전에는 미리 예약을 진행하는 것이 안전합니다.</p>
+      <p>마지막으로 **목적**에 따라 선택 기준을 달리해야 합니다. 회식이나 팀 빌딩을 위한 경우, 음향뿐 아니라 조명과 무대 효과가 풍부한 ‘프리미엄 루ーム’을 고려하고, 개인 연습이나 데이트를 위한 경우 조용하고 프라이버시가 보장된 소규모 방을 선택하는 것이 만족도를 높이는 포인트입니다.</p>
     </section>
 
-    <!-- 상세 정보 섹션 -->
-    <section>
-        <div class="container">
-            <h2 class="section-title">📍 발산 노래방 찐정보</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>💰 가격</h3>
-                    <div class="price">2시간 20,000원</div>
-                    <p class="meta">평일 기준 / 주말 +5,000원</p>
-                    <p>1시간 12,000원 / 코인 500원 1곡</p>
-                    <span class="highlight">가성비 미쳤다</span>
-                </div>
-                <div class="card">
-                    <h3>🎤 시설</h3>
-                    <p>마이크: 슈어 SM58 (짭 아니고 찐)</p>
-                    <p>스피커: JBL 프리미엄</p>
-                    <p>방음: ㅆㅅㅌㅊ (이층에서 놀아도 안 들림)</p>
-                    <span class="highlight">음질 개꿀</span>
-                </div>
+    <!-- 지역별 특화 노래방 -->
+    <section class="r-box-xm7b">
+      <h2>② 발산 지역별 특화 노래방 소개</h2>
+      <p>발산역 1번 출구에 위치한 **가든 라운지**는 최신 디지털 사운드 시스템을 갖춘 15개의 방을 보유하고 있습니다. 방마다 LED 백라이트와 무드 조명이 별도 구비돼 있어 파티 분위기를 연출하기에 적합합니다. 특히, 방당 최대 6명까지 이용 가능해 중규모 모임에 최적화돼 있습니다.</p>
+      <p>반대로, 발산역 3번 출구 근처 **스마트 가라오케**는 저렴한 가격대와 깔끔한 청결도가 강점인 소규모 방을 집중 운영합니다. 방당 평균 가격이 10,000원 이하이며, 무선 마이크와 스마트폰 연동 서비스가 제공되어 개인이 원하는 곡을 손쉽게 찾아 부를 수 있습니다.</p>
+      <p>또한, **플래시 스테이지**는 문화예술센터와 인접해 있어 공연 연습용 방을 별도로 운영합니다. 방마다 음향 체크용 마이크와 믹서가 비치돼 있어 실시간 사운드 피드백이 가능하며, 사전 예약 시 장비 대여 서비스를 추가로 이용할 수 있습니다.</p>
+    </section>
+
+    <!-- 이용 전 확인 포인트 -->
+    <section class="r-box-xm7b">
+      <h2>③ 이용 전 반드시 확인해야 할 주요 포인트</h2>
+      <p>노래방을 방문하기 전, **음향 장비 상태**를 확인하세요. 마이크가 정상 작동하는지, 스피커에 잡음이 없는지 테스트할 수 있는 작은 프리뷰 영상을 제공하는 곳을 우선 선택하면 불필요한 불편을 줄일 수 있습니다.</p>
+      <p>다음으로 **청결 및 위생 관리**가 이루어지는지 살펴보는 것이 중요합니다. 방마다 손소독제와 일회용 마이크 커버가 구비돼 있는지, 바닥과 좌석이 청소된 흔적이 있는지 직접 눈으로 확인하는 습관을 들이세요.</p>
+      <p>**서비스 옵션**도 체크 포인트입니다. 음료 무제한, 스낵 바 운영 여부, 포인트 적립제도 등 부가 서비스가 포함된 패키지는 장시간 이용 시 비용 효율을 크게 높여줍니다. 특히, 포인트를 현금처럼 사용할 수 있는 시스템은 자주 방문하는 고객에게 큰 혜택을 제공합니다.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="r-box-xm7b">
+      <h2>④ 자주 묻는 질문 (FAQ)</h2>
+      <h3>Q1. 예약 취소는 언제까지 가능한가요?</h3>
+      <p>대부분의 발산 지역 노래방은 **예약 24시간 전까지** 무료 취소를 허용합니다. 다만, 프리미엄 루ーム 같은 고가 옵션은 12시간 전까지 취소해야 전액 반환이 가능합니다. 예약 시 취소 정책을 꼭 확인하시기 바랍니다.</p>
+      <h3>Q2. 신용카드 결제 외에 현금 결제가 가능한가요?</h3>
+      <p>대다수 노래방은 신용카드와 모바일 결제(Toss, Kakao Pay)를 지원하지만, **현금 전용 슬롯**을 운영하는 일부 소규모 방도 있습니다. 현금 결제 여부는 예약 페이지에 명시돼 있으니, 현금 이용을 원한다면 해당 정보를 사전에 확인하세요.</p>
+      <h3>Q3. 어린이와 함께 이용할 때 주의할 점은?</h3>
+      <p>어린이 동반 이용 시, 마이크와 조명 장비에 손이 닿지 않도록 주의하고, **음량 제한**이 적용되는 방을 선택하는 것이 바람직합니다. 또한, 일부 노래방은 청소년 보호를 위해 18세 미만 입장 제한 정책을 두고 있으니, 사전 문의가 필요합니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 발산 노래방 내돈내산 가이드. 모든 권리 보유.</p>
+  </footer>
 </body>
 </html>
